@@ -78,6 +78,8 @@ Use the following steps to forward port 6627 in your development environment to 
 
         java -jar SubmitToNimbus-0.0.1-SNAPSHOT.jar <storm-topology-jar-file> <friendly-name-for-topology> <nimbus-host>
 
+    In this case, since we're using port forwarding from localhost to the remote headnode, use `localhost` as the Nimbus host. If you are running the code directly on the cluster (like on the head node,) or on a machine connected into the same virtual network as HDInsight, then you'd use the actual host name.
+
 ## Verify the topology was submitted
 
 Assuming you received no errors during submission, you can view the topology using the Storm web UI for your HDInsight cluster. You can view this by pointing your browser to https://CLUSTERNAME.azurehdinsight.net/stormui. Replace __CLUSTERNAME__ with the name of your HDInsight cluster. You should see the friendly name listed as a running topology.
