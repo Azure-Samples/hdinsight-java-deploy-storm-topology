@@ -19,7 +19,7 @@
     	<groupId>org.apache.storm</groupId>
     	<artifactId>storm-core</artifactId>
         <!-- change to the version of Storm that you are using -->
-    	<version>0.10.0</version>
+    	<version>1.2.2</version>
     </dependency>
   </dependencies>
   <build>
